@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/SearchBox.css";
+
+import "./Search.css";
 
 function SearchBox({ handleSearchChange }) {
   return (
