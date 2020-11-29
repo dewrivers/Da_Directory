@@ -13,7 +13,7 @@ const DataBody = ({ users }) => {
     return formattedDate;
     }
   return (
-      <body>
+      <tbody>
        {users[0] !== undefined && users[0].name !== undefined ? (
         users.map(({ login, name, picture, phone, email, dob }) => {
           return (
@@ -45,7 +45,7 @@ const DataBody = ({ users }) => {
       ) : (
         <></>
       )}
-      </body>
+      </tbody>
   )
 }
 

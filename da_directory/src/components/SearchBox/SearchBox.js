@@ -2,16 +2,16 @@ import React from "react";
 
 import "./Search.css";
 
-function SearchBox({ handleSearchChange }) {
+const SearchBox = ({ handleSearchChange }) => {
   return (
     <div className="searchbox">
       <form className="form-inline">
         <input
           className="form-control"
           type="search"
-          placeholder="Search"
+          placeholder="🔍 Search"
           aria-label="Search"
-          onChange={e => handleSearchChange(e)}
+          onChange={event => handleSearchChange(event)}
         />
       </form>
     </div>
