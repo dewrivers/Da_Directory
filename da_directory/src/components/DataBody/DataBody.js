@@ -9,7 +9,7 @@ const DataBody = ({ users }) => {
      let month = dateArray[1];
      let dayArray = dateArray[2].split("T");
      let day = dayArray[0];
-     let formattedDate = [month, day, year].join("-");
+     let formattedDate = [month, day, year].join("/");
     return formattedDate;
     }
   return (
@@ -22,7 +22,7 @@ const DataBody = ({ users }) => {
                 <img
                   src={picture.medium}
                   alt={"profile image for " + name.first + " " + name.last}
-                  className="img-responsive"
+                  className="rounded"
                 />
               </td>
               <td data-th="Name" className="name-cell align-middle">
